@@ -1,9 +1,5 @@
 /*!
- * Webflow: Front-end site library
- * @license MIT
- * Inline scripts may access the api using an async handler:
- *   var Webflow = Webflow || [];
- *   Webflow.push(readyFunction);
+ ;
  */
 ! function (e) {
     var t = {};
@@ -4745,15 +4741,7 @@
             return e
         }
     };
-    var l = [
-        [i.CONFIG_X_VALUE, i.CONFIG_X_UNIT]
-        
-        , [i.CONFIG_Y_VALUE, i.CONFIG_Y_UNIT]
-        
-        , [i.CONFIG_Z_VALUE, i.CONFIG_Z_UNIT]
-        
-        , [i.CONFIG_VALUE, i.CONFIG_UNIT]
-    ]
+    var l = [[i.CONFIG_X_VALUE, i.CONFIG_X_UNIT], [i.CONFIG_Y_VALUE, i.CONFIG_Y_UNIT], [i.CONFIG_Z_VALUE, i.CONFIG_Z_UNIT], [i.CONFIG_VALUE, i.CONFIG_UNIT]]
 }, function (e, t, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {
@@ -6426,10 +6414,10 @@
                             , B = (g(s, V, _.config) - X) * G + X;
                         x[V] = B
                     }
-            return (0, i.merge)(e, {
-                position: O
-                , current: x
-            })
+                return (0, i.merge)(e, {
+                    position: O
+                    , current: x
+                })
         }
         , T = function (e, t) {
             var n = e
@@ -8027,11 +8015,7 @@
                     var n = e.data(this, p);
                     n.handler && (n.evt = t, n.handler(n))
                 });
-                var t = [
-                    ["checkbox", ".w-checkbox-input"]
-                    
-                    , ["radio", ".w-radio-input"]
-                ];
+                var t = [["checkbox", ".w-checkbox-input"], ["radio", ".w-radio-input"]];
                 l.on("change", p + ' form input[type="checkbox"]:not(.w-checkbox-input)', function (t) {
                     e(t.target).siblings(".w-checkbox-input").toggleClass("w--redirected-checked")
                 }), l.on("change", p + ' form input[type="radio"]', function (t) {
